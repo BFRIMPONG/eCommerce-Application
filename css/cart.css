@@ -1,0 +1,9 @@
+.cart-grid{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    border: solid green;
+}
+
+.cart-grid > div{
+    border: solid yellow;
+}
