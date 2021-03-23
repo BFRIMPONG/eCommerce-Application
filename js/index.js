@@ -55,5 +55,9 @@ function addToCart(){
     }else{
         $(".addToCart").addClass("hideItems");
     }
+}
+
+function close(){
     
+    $(".close").removeClass("addToCart");    
 }

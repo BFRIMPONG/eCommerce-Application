@@ -11,7 +11,7 @@
 </head>
 <body>
 
-    <div id = "one">
+    <!-- <div id = "one">
         We now accept <i class="fab fa-apple"></i> Pay for a quick & easy checkout 
         <span>— Shop Now</span>
     </div>
@@ -81,13 +81,16 @@
                 <i class="fas fa-search"></i>
             </span>
         </div>
-    </div>
+    </div> -->
 
     <div class="grid-container">
         <div class="small-images">
-            <img src="img/3K001154_252_LD_B (1).jpg"  alt="">
+            <div><a href="img/3K001154_252_LD_B.jpg"></a><img src="img/3K001154_252_LD_B (1).jpg"  alt=""></div>
+            <div><a href="img/3K001154_252_LD_F.jpg"></a><img src="img/3K001154_252_LD_F (1).jpg" alt=""> </div>
+            <div><a href="img/3K001154_252_OF_ED.jpg"></a><img src="img/3K001154_252_OF_ED (1).jpg" alt=""></div>
+            <!-- <img src="img/3K001154_252_LD_B (1).jpg"  alt="">
             <img src="img/3K001154_252_LD_F (1).jpg" alt="">
-            <img src="img/3K001154_252_OF_ED (1).jpg" alt="">
+            <img src="img/3K001154_252_OF_ED (1).jpg" alt=""> -->
            
 
         </div>
@@ -138,13 +141,13 @@
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star-half-alt"></i>
-                <p> 28 Reviews</p>
+                <span><a href="#"> 28 Reviews</a></span>
             </div>
             <!-- <span> 28 Reviews</span></p> -->
             <h3>FREE GROUND SHIPPING <span>on all orders over $125</span></h3>
-            <div class="price">$48.99 <span>$98.50</span></div>
-            <div class="color">Color: Camel <br><img src="img/3K001154_252_LD_S.jpg" alt=""></div>
-            <div class="size"><strong>Size: </strong> select a size <span><a href="">Size Chart</a></span></div>
+            <div class="price"><strong>$48.99</strong><span>$98.50</span></div> <br>
+            <div class="color"><strong>Color: </strong> <span>Camel</span><br><img src="img/3K001154_252_LD_S.jpg" alt=""></div><br>
+            <div class="size"><strong>Size: </strong> select a size <span><a href="">Size Chart</a></span></div> 
             <div class="list">
                 <ul>
                     <li class="available">2T</li>
@@ -159,9 +162,9 @@
                     <li class="available">XL</li>
                 </ul>
             </div>
-           
+        
             <br>
-            <div><i onClick="minus()" class="fas fa-minus-circle"></i><input class="input" type="text"><i onclick="add()" class="fas fa-plus-circle"></i></div>
+            <div class="num"><i onClick="minus()" class="fas fa-minus-circle"></i><input class="input" type="text"><i onclick="add()" class="fas fa-plus-circle"></i></div> <br>
               
             <div class = "button"><button onclick="addToCart()" id="blue">ADD TO BAG</button></div>
             <br><div ><button id="white"><strong>Buy online, free in-store pickup </strong> <br>
@@ -175,14 +178,14 @@
 
             </div>
 
-            <div class="modeOfPayment">
+            <!-- <div class="modeOfPayment">
                 
                     <img src="img/pay-paypal.png" alt="">
                     <img src="img/pay-amazon.png" alt="">
                     <img src="img/pay-applepay.png" alt="">
                     <p>or 4 payments of $12.25 by <img id = "" src="img/afterpay-lockup-blackonwhite.svg" alt=""><a href="#">?</a></p>
                 
-            </div>
+            </div> -->
             
 
         </div>
@@ -191,7 +194,7 @@
 
     <div class="addToCart hideItems">
         <div class="itemsAdded">
-            <h3>Items added to Cart</h3>
+            <h3>Items added to Cart <span onclick="close()" id="close">X</span></h3>
             <div class="grid-cart">
                 <div class = "priceimg">
                     <img src="img/3K001154_252_LD_B (1).jpg" alt="">
@@ -210,6 +213,8 @@
         </div>
         <hr>
         <div class="subtotal">
+            <h2>CART SUBTOTAL: <SPan>$97.98</SPan></h2>
+            <P>Add $27.02 <span>to qualify for FREE SHIPPING!</span></P>
     
     
         </div>
