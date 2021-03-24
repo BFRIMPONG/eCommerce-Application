@@ -1,12 +1,11 @@
 var slideIndex = 1;
 showSlides(slideIndex);
 
-// Next/previous controls
 function plusSlides(n) {
   showSlides(slideIndex += n);
 }
 
-// Thumbnail image controls
+
 function currentSlide(n) {
   showSlides(slideIndex = n);
 }
@@ -61,3 +60,15 @@ function close(){
     
     $(".close").removeClass("addToCart");    
 }
+
+var detail = $('#detail');
+var price = $('#price');
+var color = $('#color');
+var size = $ ('size');
+var num = $('num');
+var addToBag = $('blue');
+
+var numOfOrders;
+numOfOrders = localStorage.getItem('numOfOrders') == null ? 0: localStorage.getItem('numOfOrders');
+
+addToBag

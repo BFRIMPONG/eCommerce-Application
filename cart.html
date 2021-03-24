@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Cart</title>
     <link rel="stylesheet" href="css/cart.css">
 </head>
 <body>
@@ -14,20 +14,22 @@
 
         </div>
 
-        <div>
+        <div class="orderSummary">
             <div class="orderSum">
                 <p>Order Summary <br><span>1 items</span></p>
 
             </div>
             <div class="subtotal">
-                <p>Subtotal <span>$48.99</span></p><br>
+                <p>Subtotal <span>$48.99</span></p>
                 <p>Sales Tax <span>$0.00</span></p><br>
-                <p>ESTIMATED TOTAL* <span>$48.99</span></p><br>
+                <p>ESTIMATED TOTAL* <span id="est">$48.99</span></p>
 
                 <input class="input" type="text" placeholder="Enter promo code"> <button id="apply"> Apply</button><br>
-                <button id="checkOut">CHECKOUT</button>
+                <button id="checkOut">CHECKOUT</button><br>
                 <p id="or">Or pay with:</p>
-                <button></button>
+                <button id="short-l"><img src="img/pay-amazon.png" alt=""></button>
+                <button id="short-r"><img src="img/pay-applepay.png" alt=""></button>
+                <button id="long"><img src="img/pay-paypal.png" alt=""></button>
 
             </div>
         </div>

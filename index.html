@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Product Details</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
 </head>
 <body>
 
@@ -85,47 +86,37 @@
 
     <div class="grid-container">
         <div class="small-images">
-            <div><a href="img/3K001154_252_LD_B.jpg"></a><img src="img/3K001154_252_LD_B (1).jpg"  alt=""></div>
-            <div><a href="img/3K001154_252_LD_F.jpg"></a><img src="img/3K001154_252_LD_F (1).jpg" alt=""> </div>
-            <div><a href="img/3K001154_252_OF_ED.jpg"></a><img src="img/3K001154_252_OF_ED (1).jpg" alt=""></div>
-            <!-- <img src="img/3K001154_252_LD_B (1).jpg"  alt="">
+            
+            <img src="img/3K001154_252_LD_B (1).jpg"  alt="">
             <img src="img/3K001154_252_LD_F (1).jpg" alt="">
-            <img src="img/3K001154_252_OF_ED (1).jpg" alt=""> -->
-           
+            <img src="img/3K001154_252_OF_ED (1).jpg" alt="">
 
         </div>
         
-        <!-- <div class="big-images">
-            <div></div>
-            <img src="img/3K001154_252_LD_B.jpg" width= "100%" alt="">
-            
-
-        </div> -->
-
+  
         <div>
-                            <!-- Slideshow container -->
+                            
         <div class="slideshow-container">
 
-            <!-- Full-width images with number and caption text -->
             <div class="mySlides fade">
-                <!-- <div class="numbertext">1 / 3</div> -->
+                
                 <img src="img/3K001154_252_LD_B.jpg" style="width:100%">
                 
             </div>
         
             <div class="mySlides fade">
-                <!-- <div class="numbertext">2 / 3</div> -->
+                
                 <img src="img/3K001154_252_LD_F.jpg" style="width:100%">
                 
             </div>
         
             <div class="mySlides fade">
-                <!-- <div class="numbertext">3 / 3</div> -->
+        
                 <img src="img/3K001154_252_OF_ED.jpg" style="width:100%">
                 
             </div>
         
-            <!-- Next and previous buttons -->
+        
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
             <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
@@ -134,7 +125,7 @@
         </div>
         
         <div class="details"> 
-            <h1>Boy's Stillwater Sherpa 1/4-Zip</h1>
+            <h1 id="detail">Boys' Stillwater Sherpa 1/4-Zip</h1>
             <div class="stars">
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
@@ -143,7 +134,7 @@
                 <i class="fas fa-star-half-alt"></i>
                 <span><a href="#"> 28 Reviews</a></span>
             </div>
-            <!-- <span> 28 Reviews</span></p> -->
+           
             <h3>FREE GROUND SHIPPING <span>on all orders over $125</span></h3>
             <div class="price"><strong>$48.99</strong><span>$98.50</span></div> <br>
             <div class="color"><strong>Color: </strong> <span>Camel</span><br><img src="img/3K001154_252_LD_S.jpg" alt=""></div><br>
@@ -162,9 +153,17 @@
                     <li class="available">XL</li>
                 </ul>
             </div>
+
+            <div class="left"> </div>
         
             <br>
-            <div class="num"><i onClick="minus()" class="fas fa-minus-circle"></i><input class="input" type="text"><i onclick="add()" class="fas fa-plus-circle"></i></div> <br>
+            <div class="num">
+                <button onclick="minus()"> - </button>
+                <input class="input" type="text" value="1">
+                <button onclick="add()"> + </button>
+                
+            </div> 
+            <br>
               
             <div class = "button"><button onclick="addToCart()" id="blue">ADD TO BAG</button></div>
             <br><div ><button id="white"><strong>Buy online, free in-store pickup </strong> <br>
@@ -194,10 +193,10 @@
 
     <div class="addToCart hideItems">
         <div class="itemsAdded">
-            <h3>Items added to Cart <span onclick="close()" id="close">X</span></h3>
+            <h3>Items added to Cart <tum onclick="addToCart()" id="close">&times;</tum></h3>
             <div class="grid-cart">
                 <div class = "priceimg">
-                    <img src="img/3K001154_252_LD_B (1).jpg" alt="">
+                    <img src="img/3K001154_252_LD_B.jpg" alt="">
                 </div>
     
                 <div class="cartInfo">
@@ -220,10 +219,51 @@
         </div>
         <hr>
         <div class="checkout">
-            <button id="blue">CHECKOUT</button>
+            <a href="cart.html"><button id="blue">CHECKOUT</button></a>
             <hr>
             <button id="white">CONTINUE SHOPPING</button>
     
+        </div>
+
+    </div>
+
+    <div class="description">
+        <div>
+            <h5>THE DETAILS</h5>
+            <p>STYLE 3K001154</p>
+            <p>Our Sherpa Fleece features a stretch fabric that's brushed on both sides for optimal <br>
+            warmth without added weight. From the backyard to the playgroung, class to recess,<br>
+            this'll keep tour little guy cozy, warm and looking sharp.
+            </p>
+
+        </div>
+
+        <div>
+            <div class="fabrics">
+                <h5>FABRIC</h5>
+                <ul><li>100% polyester</li></ul>
+            </div>
+
+            <div class="features">
+                <h5>FEATURES</h5>
+                <ul>
+                    <li>Soft, lightweight Sherpa fleece</li>
+                    <li> Stretch for comfort and mobility</li>
+                    <li>Moisture-wicking and quick-drying</li>
+                    <li>Color blocked detailing</li>
+                    <li>Logo box on the chest</li>
+                    <li>Imported</li>
+                </ul>
+
+            </div>
+            
+            <div class="instruct">
+                <h5>CARE INSTRUCTIONS</h5>
+                <ul><li>Machine wash</li></ul>
+
+            </div>
+            
+            
         </div>
 
     </div>

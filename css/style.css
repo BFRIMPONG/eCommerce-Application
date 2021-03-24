@@ -330,7 +330,7 @@ body{
 }
 .small-images img:hover{
   cursor: pointer;
-  border-color: rgb(0, 0, 94);
+  border:1px solid rgb(0, 0, 94);
 
 }
 
@@ -403,11 +403,10 @@ h3 span{
   color: black;
   margin-left: 15px;
 }
-.list{
-    /* border: solid black; */
-    /* height: 70px;
-    background-color: yellow; */
-    
+.list{    
+    position: relative;
+    right: 42px;
+   
 }
 .list li{
     padding: 0;
@@ -436,7 +435,8 @@ h3 span{
   background-color: rgb(0, 0, 94);
 }
 
-.num{
+
+.num {
   /* border: solid green; */
   width: 60%;
   height: 50px;
@@ -446,14 +446,14 @@ h3 span{
 }
 
 .num input{
-  height: 30px;
+  height: 35px;
   width: 40px;
-  
-
-  
+  position: relative; 
+  top: -5px; 
 }
-.num i{
-  /* margin-top:5px; */
+
+.num button {
+  font-size: 30px;
 }
 .button{
     align-content: center;
@@ -530,6 +530,8 @@ h3 span{
     background-color: white;
     padding:0;
     margin: 0%;
+    left: 69%;
+    
 }
 
 .hideItems{
@@ -539,7 +541,7 @@ h3 span{
 .grid-cart{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    border: solid orange;
+    /* border: solid orange; */
     position: relative;
     bottom: 50px;
 }
@@ -554,18 +556,26 @@ h3 span{
     text-align: center;
 }
 
-.itemsAdded h3 span{
+
+
+#close{
   color: white;
   margin-left: 160px;;
 }
 
-.itemsAdded h3 span:hover{
+#close:hover{
   cursor: pointer;
 }
 .priceimg img{
-    border: solid brown;
+    /* border: solid brown; */
     width:170px;
 }
-.cartInfo{
+/* .cartInfo{
     border: solid blue;
+} */
+
+.description{
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  
 }
