@@ -1,8 +1,16 @@
-body{
+.fotter{
+    background-color: rgb(3, 3, 66);
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }body{
     padding: 0;
     margin: 0;
     font-family:Arial, Helvetica, sans-serif;
 }
+
 .cart-grid{
     display: grid;
     grid-template-columns: 5fr 2fr;
@@ -13,6 +21,19 @@ body{
     border: solid yellow;
 }
 
+.top{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+}
+
+.top > div {
+    border: solid black;
+}
+
+.title{
+    font-size: 12px;
+    color: #737373;
+}
 .orderSum{
     background-color: rgb(3, 3, 58);
     color: white;

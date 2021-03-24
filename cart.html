@@ -6,11 +6,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cart</title>
     <link rel="stylesheet" href="css/cart.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    
 </head>
 <body>
+    <div class="holder">
+        <div class="nav-bar">
+            <div class="pic">
+                <img src="img/logo@2.6x.png">
+            </div>
+            <ul>
+                <li><a href="#">NEW</a> </li>
+                <li><a href="#">MEN</a> </li>
+                <li><a href="#">WOMEN</a> </li>
+                <li><a href="#">BOYS</a> </li>
+                <li><a href="#">GIRLS</a> </li>
+                <li>
+                    <div class="box">
+                        <input type="text" class="txt" placeholder="Type here">
+                        <a href="#"> <i class="fas fa-search"></i> </a>
+                    </div>
+                </li>
+                <li><a href= "#">
+                    <button class="click">
+                        <i class="fas fa-sign-in-alt"></i>
+                        <span>SIGN IN</span> 
+                    </button>
+                    </a></li>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <hr>
 
     <div class="cart-grid">
-        <div>2
+        <div class="top">
+            <div>
+                <div class="title">ITEMS</div>
+
+            </div>
+            <div>
+                <div class="title">
+                    QUANTITY & UNIT PRICE
+                </div>
+                <div class="options">
+                    <select name="" id="">
+                    <option value="1">1</option>
+                    <option value="">2</option>
+                    <option value="">3</option>
+                    <option value="">4</option>
+                    <option value="">5</option>
+                    </select>
+                    
+                </div>
+            </div>
+            <div>
+                <div class="title">
+                    DELIVERY/PICKUP
+                </div>
+                <div>
+                    <input type="radio" id="ship" name="delivery" value="ship" >
+                    <label for="ship">Ship to Me</label><br>
+                    <input type="radio" id="in-Store" name= "delivery" value="in-Store">
+                    <label for="in-Store">In-Store Pickup</label><br>
+                    <input type="radio" id="curbside" name= "delivery" value="curbside" >
+                    <label for="curbside">Curbside Pickup</label>
+                </div>
+            </div>  
+            <div>
+                <div class="title">
+                    TOTAL PRICE
+                </div>
+            </div>
 
         </div>
 
@@ -20,12 +90,12 @@
 
             </div>
             <div class="subtotal">
-                <p>Subtotal <span>$48.99</span></p>
+                <p id="cartSubTotal">Subtotal <span>0</span></p>
                 <p>Sales Tax <span>$0.00</span></p><br>
                 <p>ESTIMATED TOTAL* <span id="est">$48.99</span></p>
 
                 <input class="input" type="text" placeholder="Enter promo code"> <button id="apply"> Apply</button><br>
-                <button id="checkOut">CHECKOUT</button><br>
+                <a href="checkout.html"><button id="checkOut">CHECKOUT</button></a><br>
                 <p id="or">Or pay with:</p>
                 <button id="short-l"><img src="img/pay-amazon.png" alt=""></button>
                 <button id="short-r"><img src="img/pay-applepay.png" alt=""></button>
@@ -35,6 +105,14 @@
         </div>
 
     </div>
+
+    <br>
     
+    <div class="fotter">
+        Copyright 2021
+
+    </div>
+    
+    <script src="js/cart.js"></script>
 </body>
 </html>

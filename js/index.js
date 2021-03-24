@@ -23,7 +23,7 @@ function showSlides(n) {
       dots[i].className = dots[i].className.replace(" active", "");
   }
   slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
+//   dots[slideIndex-1].className += " active";
 }
 
 
@@ -61,14 +61,19 @@ function close(){
     $(".close").removeClass("addToCart");    
 }
 
-var detail = $('#detail');
-var price = $('#price');
-var color = $('#color');
-var size = $ ('size');
-var num = $('num');
-var addToBag = $('blue');
 
-var numOfOrders;
-numOfOrders = localStorage.getItem('numOfOrders') == null ? 0: localStorage.getItem('numOfOrders');
+console.log($("#index-quantity").val());
 
-addToBag
+$("#blue").on("click", ()=>{
+    var quantity = $("#index-quantity").val();
+    var cartQuantity = Number($("#cartQuantity").text());
+    var subTotal = Number($("#price").text());
+    cartQuantity+= Number(quantity);
+    var subTotal = subTotal*cartQuantity;
+    $("#cartQuantity").text(cartQuantity);
+    $("#cartSubTotal").text(subTotal);
+});
+
+console.log($("#price").text());
+
+
