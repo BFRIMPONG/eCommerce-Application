@@ -326,17 +326,19 @@ h3 span{
     position: relative;
     bottom: 50px;
 }
+.itemsAdded{
+  padding: 10px;
+}
 .itemsAdded h3{
     background-color:rgb(3, 3, 58) ;
     color: white;
     font-size: 24px;
     bottom: 25px;
     position: relative;
-    display: flex;
+    /* display: flex; */
     height: 45px;
     text-align: center;
 }
-
 
 
 #close{
@@ -351,9 +353,7 @@ h3 span{
     /* border: solid brown; */
     width:170px;
 }
-/* .cartInfo{
-    border: solid blue;
-} */
+
 
 .description{
   display: grid;
